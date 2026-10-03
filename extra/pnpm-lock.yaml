@@ -1,0 +1,114 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      dom-parser:
+        specifier: ^0.1.6
+        version: 0.1.6
+      realistic-structured-clone:
+        specifier: ^3.0.0
+        version: 3.0.0
+      xmlhttprequest:
+        specifier: ^1.8.0
+        version: 1.8.0
+
+packages:
+
+  base64-arraybuffer-es6@0.7.0:
+    resolution: {integrity: sha512-ESyU/U1CFZDJUdr+neHRhNozeCv72Y7Vm0m1DCbjX3KBjT6eYocvAJlSk6+8+HkVwXlT1FNxhGW6q3UKAlCvvw==}
+    engines: {node: '>=6.0.0'}
+
+  dom-parser@0.1.6:
+    resolution: {integrity: sha512-3nVRKbLEwmGfghLoeT1dxlK/0votalnOfasP+8VCHYDfDuCETY4LeMblfOeqww6XZk2ymZ1Uewy/hVad6Dy3yw==}
+
+  domexception@1.0.1:
+    resolution: {integrity: sha512-raigMkn7CJNNo6Ihro1fzG7wr3fHuYVytzquZKX5n0yizGsTcYgzdIUwj1X9pK0VvjeihV+XiclP+DjwbsSKug==}
+    deprecated: Use your platform's native DOMException instead
+
+  lodash@4.18.1:
+    resolution: {integrity: sha512-dMInicTPVE8d1e5otfwmmjlxkZoUpiVLwyeTdUsi/Caj/gfzzblBcCE5sRHV/AsjuCmxWrte2TNGSYuCeCq+0Q==}
+
+  punycode@2.3.1:
+    resolution: {integrity: sha512-vYt7UD1U9Wg6138shLtLOvdAu+8DsC/ilFtEVHcH+wydcSpNE20AfSOduf6MkRFahL5FY7X1oU7nKVZFtfq8Fg==}
+    engines: {node: '>=6'}
+
+  realistic-structured-clone@3.0.0:
+    resolution: {integrity: sha512-rOjh4nuWkAqf9PWu6JVpOWD4ndI+JHfgiZeMmujYcPi+fvILUu7g6l26TC1K5aBIp34nV+jE1cDO75EKOfHC5Q==}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
+
+  tr46@2.1.0:
+    resolution: {integrity: sha512-15Ih7phfcdP5YxqiB+iDtLoaTz4Nd35+IiAv0kQ5FNKHzXgdWqPoTIqEDDJmXceQt4JZk6lVPT8lnDlPpGDppw==}
+    engines: {node: '>=8'}
+
+  typeson-registry@1.0.0-alpha.39:
+    resolution: {integrity: sha512-NeGDEquhw+yfwNhguLPcZ9Oj0fzbADiX4R0WxvoY8nGhy98IbzQy1sezjoEFWOywOboj/DWehI+/aUlRVrJnnw==}
+    engines: {node: '>=10.0.0'}
+
+  typeson@6.1.0:
+    resolution: {integrity: sha512-6FTtyGr8ldU0pfbvW/eOZrEtEkczHRUtduBnA90Jh9kMPCiFNnXIon3vF41N0S4tV1HHQt4Hk1j4srpESziCaA==}
+    engines: {node: '>=0.1.14'}
+
+  webidl-conversions@4.0.2:
+    resolution: {integrity: sha512-YQ+BmxuTgd6UXZW3+ICGfyqRyHXVlD5GtQr5+qjiNW7bF0cqrzX500HVXPBOvgXb5YnzDd+h0zqyv61KUD7+Sg==}
+
+  webidl-conversions@6.1.0:
+    resolution: {integrity: sha512-qBIvFLGiBpLjfwmYAaHPXsn+ho5xZnGvyGvsarywGNc8VyQJUMHJ8OBKGGrPER0okBeMDaan4mNBlgBROxuI8w==}
+    engines: {node: '>=10.4'}
+
+  whatwg-url@8.7.0:
+    resolution: {integrity: sha512-gAojqb/m9Q8a5IV96E3fHJM70AzCkgt4uXYX2O7EmuyOnLrViCQlsEBmF9UQIu3/aeAIp2U17rtbpZWNntQqdg==}
+    engines: {node: '>=10'}
+
+  xmlhttprequest@1.8.0:
+    resolution: {integrity: sha512-58Im/U0mlVBLM38NdZjHyhuMtCqa61469k2YP/AaPbvCoV9aQGUpbJBj1QRm2ytRiVQBD/fsw7L2bJGDVQswBA==}
+    engines: {node: '>=0.4.0'}
+
+snapshots:
+
+  base64-arraybuffer-es6@0.7.0: {}
+
+  dom-parser@0.1.6: {}
+
+  domexception@1.0.1:
+    dependencies:
+      webidl-conversions: 4.0.2
+
+  lodash@4.18.1: {}
+
+  punycode@2.3.1: {}
+
+  realistic-structured-clone@3.0.0:
+    dependencies:
+      domexception: 1.0.1
+      typeson: 6.1.0
+      typeson-registry: 1.0.0-alpha.39
+
+  tr46@2.1.0:
+    dependencies:
+      punycode: 2.3.1
+
+  typeson-registry@1.0.0-alpha.39:
+    dependencies:
+      base64-arraybuffer-es6: 0.7.0
+      typeson: 6.1.0
+      whatwg-url: 8.7.0
+
+  typeson@6.1.0: {}
+
+  webidl-conversions@4.0.2: {}
+
+  webidl-conversions@6.1.0: {}
+
+  whatwg-url@8.7.0:
+    dependencies:
+      lodash: 4.18.1
+      tr46: 2.1.0
+      webidl-conversions: 6.1.0
+
+  xmlhttprequest@1.8.0: {}

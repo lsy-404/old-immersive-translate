@@ -72,7 +72,7 @@ Chrome商店审核会有延迟，如果你想最快体验新版，可以直接�
 7. 接下来可以设置为“always自动翻译英文”，或者右键手动点击“翻译本页面”，即可有双语显示，打开推特试试看！
 
 
-除了下载Release页面构建好的版本之外，你还可以通过Clone本项目，然后随着本项目的更新，每次都`git pull`最新代码，然后在本地手动构建: `npm run build`, 然后在扩展管理窗口，里加载 `dist/chrome`文件夹即可。点击[这里](https://github.com/immersive-translate/immersive-translate/wiki/Chrome-Firefox-%E6%89%8B%E5%8A%A8%E6%9E%84%E5%BB%BA%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC)查看更详细的步骤。
+除了下载Release页面构建好的版本之外，你还可以通过Clone本项目，然后随着本项目的更新，每次都`git pull`最新代码。首次构建前在项目根目录执行 `corepack pnpm@10.34.6 install --frozen-lockfile`，之后运行 `pnpm run build`, 然后在扩展管理窗口，里加载 `dist/chrome`文件夹即可。点击[这里](https://github.com/immersive-translate/immersive-translate/wiki/Chrome-Firefox-%E6%89%8B%E5%8A%A8%E6%9E%84%E5%BB%BA%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC)查看更详细的步骤。
 
 
 ### 中国用户谷歌翻译接口被墙说明

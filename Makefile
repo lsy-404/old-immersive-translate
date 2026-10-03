@@ -1,13 +1,13 @@
 .Phony: start
 start:
-	web-ext run -s ./src -f firefoxdeveloperedition -p dev-edition-default
+	pnpm dlx web-ext run -s ./src -f firefoxdeveloperedition -p dev-edition-default
 
 .Phony: build
 build:
-	npm run build
+	pnpm run build
 .Phony: watch
 watch:
-	watchexec -e js,json,html npm run chrome
+	watchexec -e js,json,html pnpm run chrome
 
 
 .Phony: icon

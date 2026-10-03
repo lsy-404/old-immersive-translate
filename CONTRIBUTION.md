@@ -3,7 +3,7 @@
 
 ## Requirement
 
-- [nodejs](https://nodejs.org/en/)
+- [Node.js](https://nodejs.org/en/) 22 or newer with Corepack
 
 
 ## Chrome 
@@ -18,13 +18,13 @@ git clone https://github.com/immersive-translate/immersive-translate.git
 
 ```bash
 cd immersive-translate
-npm install
+corepack pnpm@10.34.6 install --frozen-lockfile
 ```
 
 3. Build
 
 ```
-npm run build
+pnpm run build
 ```
 
 4. Open Chrome Extension Manager `chrome://extensions`:
@@ -40,11 +40,7 @@ If you want to develope this project, Firefox is the best choice.
 ### Firefox
 
 1. Download [Firefox](https://www.mozilla.org/en-US/firefox/new/)
-2. Install [web-ext](https://extensionworkshop.com/documentation/develop/getting-started-with-web-ext/)
-
-```bash
-npm install --global web-ext
-```
+2. The `make start` target runs [web-ext](https://extensionworkshop.com/documentation/develop/getting-started-with-web-ext/) through `pnpm dlx`; no global installation is needed.
 
 3. Start watch and develope:
 
